@@ -1,0 +1,10 @@
+CODE INSTRUCTIONS:
+Keep scripts modular, (Ex. ClientMain, connects to XTab and YTab Modules, which have their respective XManager and YManager server scripts, and save data inside ServerMain)
+
+Keep all UI in script, make it polished, high fidelity. UI should have a regal theming, with purples and golds. 
+Everything should look high quality, like a finished product, including visual animations for UI elements.
+
+---
+GAME IDEA:
+A JoJo's Bizarre Adventure-themed card collection battler
+Players collect cards, level and power them, and build their decks to fight
