@@ -224,31 +224,6 @@ function UIBase.init()
 	innerBorderStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
 	innerBorderStroke.Parent = strokeFrame
 
-	local cornerPositions = {
-		UDim2.new(0, 0, 0, 0),
-		UDim2.new(1, 0, 0, 0),
-		UDim2.new(0, 0, 1, 0),
-		UDim2.new(1, 0, 1, 0)
-	}
-
-	for i, pos in ipairs(cornerPositions) do
-		local cornerDecal = Instance.new("Frame")
-		cornerDecal.Name = "CornerAccents" .. i
-		cornerDecal.Size = UDim2.new(0, 16, 0, 16)
-		cornerDecal.Position = pos
-		cornerDecal.AnchorPoint = Vector2.new(pos.X.Scale, pos.Y.Scale)
-		cornerDecal.BackgroundColor3 = theme.GoldLight
-		cornerDecal.Rotation = 45
-		cornerDecal.BorderSizePixel = 0
-		cornerDecal.ZIndex = 2
-		cornerDecal.Parent = innerBorder
-
-		local cornerStroke = Instance.new("UIStroke")
-		cornerStroke.Color = theme.Shadow
-		cornerStroke.Thickness = 2
-		cornerStroke.Parent = cornerDecal
-	end
-
 	local contentFrame = Instance.new("Frame")
 	contentFrame.Name = "ContentFrame"
 	contentFrame.BackgroundTransparency = 1
