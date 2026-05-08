@@ -1,4 +1,5 @@
 -- @ScriptType: ModuleScript
+-- @ScriptType: ModuleScript
 local TweenService = game:GetService("TweenService")
 local Players = game:GetService("Players")
 
@@ -237,7 +238,7 @@ function UIBase.init()
 		local sh = safeArea.AbsoluteSize.Y
 		if sw == 0 or sh == 0 then return end
 
-		local isNarrow = sw < 800
+		local isNarrow = sw < sh
 
 		local topBarHeight = isNarrow and 90 or 70
 		topBarContainer.Size = UDim2.new(1, 0, 0, topBarHeight)
